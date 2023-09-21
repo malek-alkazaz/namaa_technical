@@ -1,0 +1,2373 @@
+{
+	"info": {
+		"_postman_id": "283d09d8-0955-4527-bbd6-30bdd04e5471",
+		"name": "namaa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17440826"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"first_name\",\r\n    \"last_name\":\"last_name\",\r\n    \"phone\":\"2510265275\",\r\n    \"type_id\":2,\r\n    \"email\":\"test11@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\":\"first_name\",\r\n    \"last_name\":\"last_name\",\r\n    \"phone\":\"2510265275\",\r\n    \"type_id\":2,\r\n    \"email\":\"test11@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:35:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:35:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"registered_successful\",\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 12,\n            \"first_name\": \"first_name\",\n            \"last_name\": \"last_name\",\n            \"phone\": \"2510265275\",\n            \"type_id\": \"2\",\n            \"email\": \"test11@gmail.com\",\n            \"role_id\": 2\n        },\n        \"token\": \"2|AjX2Dmdj9yY15Vel7hZdS5n9XUEAf7sHLhifPL0K8f8c5e18\"\n    },\n    \"status_code\": 201,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"2510265275\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\":\"2510265275\",\r\n    \"password\":\"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:38:00 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:38:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"login_successful\",\n    \"status\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 12,\n            \"first_name\": \"first_name\",\n            \"last_name\": \"last_name\",\n            \"phone\": \"2510265275\",\n            \"type_id\": 2,\n            \"email\": \"test11@gmail.com\",\n            \"role_id\": 2\n        },\n        \"token\": \"3|GBB0FQh7wunW256MxCvC3kSKxQo79ckMhBRfZpAtb0f57e0a\"\n    },\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/logout",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/logout",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:37:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:37:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logout_successfully\",\n    \"status\": true,\n    \"data\": [],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "AddArticle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"new article title\",\r\n    \"body\": \"new body for  article\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddArticle",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"new article title\",\r\n    \"body\": \"new body for  article\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:42:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:42:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.store_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 41,\n        \"title\": \"new article title\",\n        \"body\": \"new body for  article\",\n        \"status\": \"pending\",\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"first_name last_name\"\n        }\n    },\n    \"status_code\": 201,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "GetArticles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetArticles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:39:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:39:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.show_successful\",\n    \"status\": true,\n    \"data\": [\n        {\n            \"id\": 21,\n            \"title\": \"Prof.\",\n            \"body\": \"Illo quo et occaecati libero. Quia fuga doloribus sint similique expedita aperiam iste dolore. Ut voluptas ut aut incidunt dolore beatae.\\n\\nMagnam at quia modi dicta est. Est voluptatibus dolores dolorum beatae deserunt. Placeat doloribus unde veritatis atque quibusdam et.\\n\\nEa provident est maiores quis quisquam optio quo. Sint officiis quibusdam blanditiis dolores. Laboriosam dolore quas delectus corrupti vel sunt autem possimus. Aut porro cum voluptatem et.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 22,\n            \"title\": \"Dr.\",\n            \"body\": \"Unde laudantium molestias sapiente dignissimos omnis voluptatibus. Aut a velit sit. Rerum ratione voluptatem nobis ullam. Ad odit explicabo doloremque.\\n\\nEos non repellat illum aliquid adipisci. Fugiat reiciendis enim ab a. Illo tempore facere saepe consequatur dolor inventore quia quaerat. Vitae sed vero at dolorem ducimus.\\n\\nQuaerat est sit et. Odio quo et necessitatibus sequi laudantium et. Ad ea quod dolor quo qui.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 23,\n            \"title\": \"Prof.\",\n            \"body\": \"Cum sit quod rerum ut temporibus repellendus. Rerum ad voluptas sit molestias ut iure dolorem. Optio possimus voluptatem est tenetur sunt assumenda. Quia recusandae libero saepe voluptatum illo enim ea.\\n\\nVitae consequuntur deleniti rem dolore iusto. Dolore earum qui non eos aliquid. Quis quis magnam libero. Quis animi reiciendis suscipit repudiandae error eum.\\n\\nModi quod expedita est ut odio incidunt quia omnis. Magni fuga at odio nihil ducimus nihil velit. Qui adipisci omnis laudantium autem qui ratione. Rem ullam corporis numquam tempora.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 24,\n            \"title\": \"Dr.\",\n            \"body\": \"Et vero quia aut delectus similique. Non voluptatem quo similique nesciunt. Laboriosam eos earum fugit alias. Illum amet ut adipisci qui deserunt amet.\\n\\nNatus dolores non quis nihil sed atque dolores voluptatum. Reiciendis voluptate in libero voluptatibus non. Ex nihil omnis id sed qui repellendus nam voluptatum.\\n\\nFuga ab asperiores dolores in numquam qui aspernatur dolores. Omnis ipsa vel aut quas et consectetur sit. Molestias culpa possimus inventore. Placeat iste aspernatur culpa expedita id nesciunt.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"title\": \"Prof.\",\n            \"body\": \"Non porro ad expedita cum. Saepe culpa maxime nemo consequuntur. Occaecati illum unde omnis rerum distinctio. Rerum aperiam vel numquam vel asperiores.\\n\\nRerum sed aut nobis et. Assumenda optio praesentium cupiditate. Id itaque magni sit. Nostrum nobis repellat asperiores tempore a.\\n\\nInventore eos qui culpa vel voluptatem et quo ex. Quibusdam qui ut culpa ullam. Repellat qui sed quia pariatur fuga. Dolorem porro voluptatem ipsam quia.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"title\": \"Ms.\",\n            \"body\": \"Quia qui nostrum placeat autem architecto. Saepe sequi consequatur consectetur molestiae eum corporis. Cupiditate a enim temporibus tempora aut nobis. Consequatur cum est consequuntur eligendi.\\n\\nLaborum pariatur porro dolorem quod eos enim et. Provident qui in perspiciatis voluptas maxime. Sit voluptatem magnam officiis minima dolore est. Consectetur accusamus deserunt fuga qui quia.\\n\\nEnim quis sint quisquam et iusto rerum accusantium. Iusto inventore occaecati necessitatibus aperiam nisi adipisci et aut. Animi qui et velit impedit repellat.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"title\": \"Prof.\",\n            \"body\": \"Commodi veniam accusamus nihil recusandae qui nobis. Eligendi fugiat nihil qui laudantium libero et qui.\\n\\nDolor adipisci consequuntur qui possimus. Optio tempora perferendis vitae sint ea vel.\\n\\nEst voluptas dicta et perspiciatis perferendis facilis. Id libero dolorum sed eius provident. Minima quaerat praesentium molestias consequatur modi. Sapiente veritatis dolor ullam modi voluptas veritatis.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 28,\n            \"title\": \"Dr.\",\n            \"body\": \"Est ut cum corporis adipisci minima sint dolores. Reprehenderit nihil soluta nostrum perferendis sed voluptate mollitia aliquam. Est voluptatibus provident perferendis similique blanditiis aliquam vel. Exercitationem illum nulla consequatur.\\n\\nImpedit non sequi eos. Explicabo tempora molestiae et. Nemo perspiciatis veniam magnam nesciunt distinctio omnis eos eum. Totam provident minus et in.\\n\\nVelit sapiente ut labore perferendis eaque autem. Molestiae veritatis eum excepturi et.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"title\": \"Dr.\",\n            \"body\": \"Sit temporibus nam qui ipsum voluptatum debitis ad. Est quisquam harum distinctio nulla nemo esse. Odio et laborum rerum modi.\\n\\nEa nihil ea dolor nihil corporis consequatur sit. Et voluptatem voluptatibus quia illo deleniti officiis. Tempore quia et dolorem vel dicta.\\n\\nVoluptatem et nam maxime laborum magni quas. Corporis earum beatae optio nesciunt voluptatibus quo ex eaque. Nobis recusandae a sapiente at veritatis. Quidem quis in dolor corrupti omnis.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 30,\n            \"title\": \"Prof.\",\n            \"body\": \"Ad commodi hic illo minima inventore aut dolor. Qui eos autem provident. Necessitatibus deserunt amet asperiores et excepturi.\\n\\nPraesentium error natus rerum non atque in porro quo. Autem et consequuntur iusto quod. Rerum minus natus quaerat aut excepturi laudantium. Sapiente unde nesciunt animi enim.\\n\\nEsse reiciendis cum sed aspernatur. Fugit perferendis ea voluptas. Porro enim animi eos ex et voluptas. Officiis qui quasi qui. Voluptas unde sed mollitia culpa minus hic.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        }\n    ],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "ShowArticle",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/articles/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ShowArticle",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/articles/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:41:09 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:41:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.show_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"Prof.\",\n        \"body\": \"Nisi mollitia alias quia et et. Laboriosam unde deserunt ex quis. Aut nostrum consectetur et aspernatur ipsam a.\\n\\nCulpa nulla voluptatem asperiores dolor sed dignissimos occaecati. Voluptas sed consectetur reiciendis nobis odit impedit.\\n\\nAut ullam dolorem optio nesciunt provident occaecati dolor omnis. Commodi culpa fugit voluptatem sed dolore sit consequuntur. Fuga eveniet quibusdam labore et pariatur ut neque quaerat.\",\n        \"status\": \"pending\",\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"first_name last_name\"\n        }\n    },\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateArticle",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"article 3\",\r\n    \"body\": \"Update body 33\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateArticle",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"article 3\",\r\n    \"body\": \"Update body 33\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:42:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:42:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.update_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"article 3\",\n        \"body\": \"Update body 33\",\n        \"status\": \"pending\",\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"first_name last_name\"\n        }\n    },\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteArticle",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteArticle",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:01 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.delete_successful\",\n    \"status\": true,\n    \"data\": [],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "ReviewArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/articles/review",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"review"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ReviewArticle",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/articles/review",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"review"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Unauthorized\"\n}"
+						}
+					]
+				},
+				{
+					"name": "ApproveArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    //accepted\r\n    //rejected\r\n    \"status\":\"rejected\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/1/approve",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"1",
+								"approve"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ApproveArticle",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //accepted\r\n    //rejected\r\n    \"status\":\"rejected\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/1/approve",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"1",
+										"approve"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Unauthorized\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetArticleWithStatus",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"status\":\"accepted\",\r\n    \"status\":\"pending\"\r\n    // \"status\":\"rejected\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User articles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // \"status\":\"accepted\",\r\n    \"status\":\"pending\"\r\n    // \"status\":\"rejected\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/status",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:50 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:43:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.show_successful\",\n    \"status\": true,\n    \"data\": [\n        {\n            \"id\": 3,\n            \"title\": \"article 3\",\n            \"body\": \"Update body 33\",\n            \"status\": \"pending\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Dr.\",\n            \"body\": \"Necessitatibus magni ut dignissimos sunt. Qui inventore ipsam consequatur cupiditate ea incidunt minus aspernatur. Nihil aut similique cupiditate consequatur. Consequuntur asperiores consequuntur provident est blanditiis est at.\\n\\nSit asperiores sint mollitia quia. Perspiciatis dolores facere odio qui nostrum quidem excepturi. Repudiandae non excepturi necessitatibus vero.\\n\\nEt ea nihil ipsum qui in tempore nihil. Doloremque harum omnis eos adipisci ullam a. Eum voluptates rerum incidunt magnam quos voluptates temporibus.\",\n            \"status\": \"pending\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        },\n        {\n            \"id\": 41,\n            \"title\": \"new article title\",\n            \"body\": \"new body for  article\",\n            \"status\": \"pending\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        }\n    ],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "PopularArticles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    //accepted\r\n    //rejected\r\n    \"status\":\"rejected\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/popular",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"popular"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PopularArticles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    //accepted\r\n    //rejected\r\n    \"status\":\"rejected\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/popular",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"popular"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:44:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:44:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.show_successful\",\n    \"status\": true,\n    \"data\": [\n        {\n            \"id\": 28,\n            \"title\": \"Dr.\",\n            \"body\": \"Est ut cum corporis adipisci minima sint dolores. Reprehenderit nihil soluta nostrum perferendis sed voluptate mollitia aliquam. Est voluptatibus provident perferendis similique blanditiis aliquam vel. Exercitationem illum nulla consequatur.\\n\\nImpedit non sequi eos. Explicabo tempora molestiae et. Nemo perspiciatis veniam magnam nesciunt distinctio omnis eos eum. Totam provident minus et in.\\n\\nVelit sapiente ut labore perferendis eaque autem. Molestiae veritatis eum excepturi et.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        },\n        {\n            \"id\": 22,\n            \"title\": \"Dr.\",\n            \"body\": \"Unde laudantium molestias sapiente dignissimos omnis voluptatibus. Aut a velit sit. Rerum ratione voluptatem nobis ullam. Ad odit explicabo doloremque.\\n\\nEos non repellat illum aliquid adipisci. Fugiat reiciendis enim ab a. Illo tempore facere saepe consequatur dolor inventore quia quaerat. Vitae sed vero at dolorem ducimus.\\n\\nQuaerat est sit et. Odio quo et necessitatibus sequi laudantium et. Ad ea quod dolor quo qui.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"title\": \"Dr.\",\n            \"body\": \"Sit temporibus nam qui ipsum voluptatum debitis ad. Est quisquam harum distinctio nulla nemo esse. Odio et laborum rerum modi.\\n\\nEa nihil ea dolor nihil corporis consequatur sit. Et voluptatem voluptatibus quia illo deleniti officiis. Tempore quia et dolorem vel dicta.\\n\\nVoluptatem et nam maxime laborum magni quas. Corporis earum beatae optio nesciunt voluptatibus quo ex eaque. Nobis recusandae a sapiente at veritatis. Quidem quis in dolor corrupti omnis.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"title\": \"Prof.\",\n            \"body\": \"Non porro ad expedita cum. Saepe culpa maxime nemo consequuntur. Occaecati illum unde omnis rerum distinctio. Rerum aperiam vel numquam vel asperiores.\\n\\nRerum sed aut nobis et. Assumenda optio praesentium cupiditate. Id itaque magni sit. Nostrum nobis repellat asperiores tempore a.\\n\\nInventore eos qui culpa vel voluptatem et quo ex. Quibusdam qui ut culpa ullam. Repellat qui sed quia pariatur fuga. Dolorem porro voluptatem ipsam quia.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 23,\n            \"title\": \"Prof.\",\n            \"body\": \"Cum sit quod rerum ut temporibus repellendus. Rerum ad voluptas sit molestias ut iure dolorem. Optio possimus voluptatem est tenetur sunt assumenda. Quia recusandae libero saepe voluptatum illo enim ea.\\n\\nVitae consequuntur deleniti rem dolore iusto. Dolore earum qui non eos aliquid. Quis quis magnam libero. Quis animi reiciendis suscipit repudiandae error eum.\\n\\nModi quod expedita est ut odio incidunt quia omnis. Magni fuga at odio nihil ducimus nihil velit. Qui adipisci omnis laudantium autem qui ratione. Rem ullam corporis numquam tempora.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"title\": \"Ms.\",\n            \"body\": \"Quia qui nostrum placeat autem architecto. Saepe sequi consequatur consectetur molestiae eum corporis. Cupiditate a enim temporibus tempora aut nobis. Consequatur cum est consequuntur eligendi.\\n\\nLaborum pariatur porro dolorem quod eos enim et. Provident qui in perspiciatis voluptas maxime. Sit voluptatem magnam officiis minima dolore est. Consectetur accusamus deserunt fuga qui quia.\\n\\nEnim quis sint quisquam et iusto rerum accusantium. Iusto inventore occaecati necessitatibus aperiam nisi adipisci et aut. Animi qui et velit impedit repellat.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        },\n        {\n            \"id\": 30,\n            \"title\": \"Prof.\",\n            \"body\": \"Ad commodi hic illo minima inventore aut dolor. Qui eos autem provident. Necessitatibus deserunt amet asperiores et excepturi.\\n\\nPraesentium error natus rerum non atque in porro quo. Autem et consequuntur iusto quod. Rerum minus natus quaerat aut excepturi laudantium. Sapiente unde nesciunt animi enim.\\n\\nEsse reiciendis cum sed aspernatur. Fugit perferendis ea voluptas. Porro enim animi eos ex et voluptas. Officiis qui quasi qui. Voluptas unde sed mollitia culpa minus hic.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"title\": \"Prof.\",\n            \"body\": \"Commodi veniam accusamus nihil recusandae qui nobis. Eligendi fugiat nihil qui laudantium libero et qui.\\n\\nDolor adipisci consequuntur qui possimus. Optio tempora perferendis vitae sint ea vel.\\n\\nEst voluptas dicta et perspiciatis perferendis facilis. Id libero dolorum sed eius provident. Minima quaerat praesentium molestias consequatur modi. Sapiente veritatis dolor ullam modi voluptas veritatis.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 12,\n                \"name\": \"first_name last_name\"\n            }\n        },\n        {\n            \"id\": 21,\n            \"title\": \"Prof.\",\n            \"body\": \"Illo quo et occaecati libero. Quia fuga doloribus sint similique expedita aperiam iste dolore. Ut voluptas ut aut incidunt dolore beatae.\\n\\nMagnam at quia modi dicta est. Est voluptatibus dolores dolorum beatae deserunt. Placeat doloribus unde veritatis atque quibusdam et.\\n\\nEa provident est maiores quis quisquam optio quo. Sint officiis quibusdam blanditiis dolores. Laboriosam dolore quas delectus corrupti vel sunt autem possimus. Aut porro cum voluptatem et.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        },\n        {\n            \"id\": 24,\n            \"title\": \"Dr.\",\n            \"body\": \"Et vero quia aut delectus similique. Non voluptatem quo similique nesciunt. Laboriosam eos earum fugit alias. Illum amet ut adipisci qui deserunt amet.\\n\\nNatus dolores non quis nihil sed atque dolores voluptatum. Reiciendis voluptate in libero voluptatibus non. Ex nihil omnis id sed qui repellendus nam voluptatum.\\n\\nFuga ab asperiores dolores in numquam qui aspernatur dolores. Omnis ipsa vel aut quas et consectetur sit. Molestias culpa possimus inventore. Placeat iste aspernatur culpa expedita id nesciunt.\",\n            \"status\": \"accepted\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Greg Lockman\"\n            }\n        }\n    ],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "SearchArticle",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/articles/search?query=exercitationem nihil molestiae",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articles",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "exercitationem nihil molestiae"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SearchArticle",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/articles/search?query=exercitationem nihil molestiae",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"articles",
+										"search"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "exercitationem nihil molestiae"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:51:51 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:51:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.search_successful\",\n    \"status\": true,\n    \"data\": [\n        {\n            \"id\": 10,\n            \"title\": \"Dr.\",\n            \"body\": \"Ratione iure exercitationem nihil molestiae dolorem. Est labore occaecati dolor vitae nobis autem corrupti rerum. Voluptatum voluptate ex magni enim earum et modi. Cumque id omnis qui cum eum est.\\n\\nAperiam tempore rerum ratione exercitationem dolorem aut placeat. Sequi nisi recusandae voluptatum temporibus sed et et. Quidem fugiat est tempore suscipit necessitatibus. Dolorem corporis laudantium est quia tenetur explicabo.\\n\\nEos eligendi et et qui doloribus assumenda incidunt. Labore excepturi deserunt libero provident sed. Voluptas non ut reiciendis voluptatem et.\",\n            \"status\": \"pending\",\n            \"user\": {\n                \"id\": 4,\n                \"name\": \"Savanna Welch\"\n            }\n        }\n    ],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "AddComment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"content 11\",\r\n    \"article_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/comments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddComment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\":\"content 11\",\r\n    \"article_id\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/comments",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:53:42 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:53:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.store_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 4,\n        \"content\": \"content 11\",\n        \"article\": {\n            \"id\": 1,\n            \"name\": \"Ms.\"\n        },\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"first_name last_name\"\n        }\n    },\n    \"status_code\": 201,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "ShowComment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/comments/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ShowComment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/comments/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:54:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 16:54:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.show_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 1,\n        \"content\": \"content 1\",\n        \"article\": {\n            \"id\": 1,\n            \"name\": \"Ms.\"\n        },\n        \"user\": {\n            \"id\": 4,\n            \"name\": \"Savanna Welch\"\n        }\n    },\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateComment",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"Update content 11\",\r\n    \"article_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/comments/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit a comment that is not owned by him",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\":\"content 11\",\r\n    \"article_id\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/comments/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments",
+										"2"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:05:35 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:05:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"error.Unauthorized \",\n    \"status\": true,\n    \"data\": [],\n    \"status_code\": 401,\n    \"pagination_data\": null\n}"
+						},
+						{
+							"name": "UpdateComment",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\":\"content 11\",\r\n    \"article_id\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/comments/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:06:29 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:06:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.update_successful\",\n    \"status\": true,\n    \"data\": {\n        \"id\": 4,\n        \"content\": \"content 11\",\n        \"article\": {\n            \"id\": 1,\n            \"name\": \"Ms.\"\n        },\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"first_name last_name\"\n        }\n    },\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{Accept}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "{{Content-Type}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/comments/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/comments/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments",
+										"3"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:07:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"error.Unauthorized \",\n    \"status\": true,\n    \"data\": [],\n    \"status_code\": 401,\n    \"pagination_data\": null\n}"
+						},
+						{
+							"name": "DeleteComment",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "{{Accept}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/comments/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"comments",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:09:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Sep 2023 17:09:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success.delete_successful\",\n    \"status\": true,\n    \"data\": [],\n    \"status_code\": 200,\n    \"pagination_data\": null\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		},
+		{
+			"key": "Accept",
+			"value": "application/json",
+			"type": "string"
+		},
+		{
+			"key": "Content-Type",
+			"value": "application/json",
+			"type": "string"
+		}
+	]
+}
